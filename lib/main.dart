@@ -109,7 +109,11 @@ class _WifiInfoStateState extends State<WifiInfoState> {
                       }));
                     },
                   )
-                : Container()
+                : Container(),
+            Padding(
+              padding: EdgeInsets.only(top: 50),
+              child: const Text("Write by 艾志奇"),
+            )
           ],
         )),
       ),
