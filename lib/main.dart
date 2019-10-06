@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui' as prefix0;
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -110,10 +111,20 @@ class _WifiInfoStateState extends State<WifiInfoState> {
                     },
                   )
                 : Container(),
-            Padding(
-              padding: EdgeInsets.only(top: 50),
-              child: const Text("Write by 艾志奇"),
-            )
+            Container(
+              height: 220,
+              padding: EdgeInsets.only(top: 80, bottom: 10),
+              child: Image.asset(
+                "images/logo.png",
+                width: 100.0,
+              ),
+            ),
+            Container(
+              height: 100,
+              width: 300,
+              child: const Text(
+                  "                           Write for 艾睿杯 \n by https://github.com/Basums/special_journey"),
+            ),
           ],
         )),
       ),
